@@ -17,6 +17,8 @@ export default {
 
 <style lang="scss" scoped>
 .footer-wrapper {
+  height: 60px;
+  line-height: 48px;
   color: #7F8289;
   text-align: center;
 }

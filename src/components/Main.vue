@@ -34,7 +34,7 @@ export default {
   display: flex;
   .main-background {
     flex: 1;
-    height: 100vh;
+    height: calc(100vh - 60px);
   }
 }
 </style>
