@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
-    <title>responsive-html</title>
+    <title>Job leads</title>
+    <meta property="og:title" content="Job leads" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://responsive-html.firebaseapp.com/" />
+    <meta property="og:image" content="https://static.jobleads.com/resources/_shared/gfx/logo_JL.svg" />
   </head>
   <body>
     <noscript>
@@ -14,5 +18,18 @@
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDpLGWxvZEy1aL58PS06fntE3ijvRTvbm8",
+        authDomain: "responsive-html.firebaseapp.com",
+        databaseURL: "https://responsive-html.firebaseio.com",
+        projectId: "responsive-html",
+        storageBucket: "responsive-html.appspot.com",
+        messagingSenderId: "19161098279"
+      };
+      firebase.initializeApp(config);
+    </script>
   </body>
 </html>
