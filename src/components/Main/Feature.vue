@@ -48,12 +48,10 @@ export default {
 
 <style lang="scss" scoped>
 .feature-wrapper {
-  position: absolute;
-  width: 420px;
+  width: 100%;
   height: 360px;
   background-color: #fff;
-  top: 120px;
-  left: 40px;
+  margin-top: 40px;
   .feature-title {
     font-size: 22px;
     padding: 16px;

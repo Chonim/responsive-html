@@ -5,7 +5,7 @@
       src="@/assets/cross.svg"
       alt="Close button"
     >
-    <h1>Mehr Informationen</h1>
+    <h1>Mehr Informationen:</h1>
     <hr>
     <p>{{ loremIpsum }}</p>
   </div>
@@ -49,7 +49,8 @@ $close-button-padding: 8px;
     margin-bottom: 36px;
   }
   p {
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 1.8;
   }
 }
 </style>

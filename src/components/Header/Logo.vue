@@ -1,10 +1,10 @@
 <template>
-  <div class="logo-wrapper">
+  <header class="logo-wrapper">
     <img
       src="@/assets/logo_JL.svg"
       alt="Job Leads Logo"
     >
-  </div>
+  </header>
 </template>
 
 <script>
@@ -16,11 +16,7 @@ export default {
 <style lang="scss" scoped>
 .logo-wrapper {
   background-color: #fff;
-  position: absolute;
-  top: 40px;
-  left: 40px;
-  /* width: 280px;
-  height: 80px; */
+  width: 320px;
   display: flex;
   img {
     flex: 1;

@@ -19,15 +19,8 @@ export default {
 </script>
 
 <style lang="scss">
-/* @font-face {
-  font-family: 'chicagoflfregular';
-  src: url('./assets/chicagoflf-webfont.woff2') format('woff2'),
-       url('/assets/chicagoflf-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-} */
-
 body {
+  font-family: 'Fira Sans';
   margin: 0;
   background-color: #31333D;
 }

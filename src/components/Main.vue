@@ -1,19 +1,24 @@
 <template>
-  <div class="main-wrapper">
+  <div class="jl-wrapper">
+    <!-- background img -->
     <img
       class="main-background"
       src="@/assets/mood.jpg"
       alt="Mood background"
     >
-    <jl-logo />
-    <jl-feature />
+    <section class="main-wrapper">
+      <!-- header -->
+      <jl-logo />
+      <!-- main -->
+      <jl-feature />
+    </section>
     <more-info />
   </div>
 </template>
 
 <script>
-import JlLogo from '@/components/Logo'
-import JlFeature from '@/components/Feature'
+import JlLogo from '@/components/Header/Logo'
+import JlFeature from '@/components/Main/Feature'
 import MoreInfo from '@/components/MoreInfo'
 
 export default {
@@ -27,14 +32,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.main-wrapper {
+.jl-wrapper {
   position: relative;
-  width: 90%;
   margin: 0 auto;
   display: flex;
+  width: 90%;
   .main-background {
     flex: 1;
     height: calc(100vh - 60px);
+  }
+  .main-wrapper {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 460px;
+    margin: 0 auto;
   }
 }
 </style>
