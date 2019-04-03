@@ -22,4 +22,10 @@ export default {
   color: #7F8289;
   text-align: center;
 }
+
+@media (max-width: 992px) {
+  .footer-wrapper {
+    font-size: 14px;
+  }
+}
 </style>

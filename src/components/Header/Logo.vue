@@ -24,4 +24,11 @@ export default {
     box-sizing: border-box;
   }
 }
+
+@media (max-width: 992px) {
+  .logo-wrapper {
+    width: 100%;
+    padding-top: 8px;
+  }
+}
 </style>

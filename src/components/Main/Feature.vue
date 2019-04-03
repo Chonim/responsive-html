@@ -1,7 +1,12 @@
 <template>
   <div class="feature-wrapper">
     <div class="feature-title">
-      {{ featureTitle }}
+      <div>{{ featureTitle }}</div>
+      <img
+        class="feature-image"
+        src="@/assets/mood.jpg"
+        alt="Feature Image"
+      >
     </div>
     <div class="feature-list-container">
       <ul class="feature-list">
@@ -25,9 +30,6 @@
         </div>
       </div>
     </div>
-    <!-- <button class="more-info-button">
-      Jetzt säubern und neuen job finden
-    </button> -->
   </div>
 </template>
 
@@ -49,7 +51,8 @@ export default {
 <style lang="scss" scoped>
 .feature-wrapper {
   width: 100%;
-  height: 360px;
+  min-height: 340px;
+  height: auto;
   background-color: #fff;
   margin-top: 40px;
   .feature-title {
@@ -59,15 +62,20 @@ export default {
     line-height: 1.4;
     color: #F9FBFF;
     background-color: #31333D;
+    .feature-image {
+      display: none;
+    }
   }
   .feature-list-container {
     margin-top: 32px;
     .feature-list {
       padding-left: 16px;
-      font-size: 16px;
+      font-size: 14px;
+      font-weight: 400;
       li {
         display: flex;
-        line-height: 1.6;
+        align-items: baseline;
+        line-height: 2;
         img {
           margin-right: 10px;
         }
@@ -76,29 +84,50 @@ export default {
   }
   .price-wrapper {
     display: flex;
-    width: 76%;
+    align-items: flex-end;
+    width: 240px;
     margin: 0 auto;
     margin-top: 36px;
     .check-mark-circle {
       margin-right: 20px;
     }
     .discounted-price {
-      font-size: 40px;
+      color: #31333D;
+      font-size: 32px;
+      font-weight: 500;
     }
     .original-price {
+      font-size: 12px;
       text-decoration-line: line-through;
     }
   }
-  .more-info-button {
-    width: 100%;
-    height: 52px;
-    color: #fff;
-    font-size: 18px;
-    background-color: #FF7503;
-    border: none;
-    transition: 0.2s;
-    &:hover {
-      font-size: 20px;
+}
+
+@media (max-width: 992px) {
+  .feature-wrapper {
+    margin-top: 0px;
+    .feature-title {
+      font-size: 16px;
+      line-height: 1.6;
+      .feature-image {
+        display: block;
+        height: 192px;
+        width: auto;
+        margin: 16px auto 4px;
+      }
+    }
+    .feature-list-container {
+      width: 288px;
+      margin: 0 auto;
+      .feature-list {
+        font-size: 12px;
+        li {
+          line-height: 2;
+        }
+      }
+    }
+    .price-wrapper {
+      padding-bottom: 32px;
     }
   }
 }

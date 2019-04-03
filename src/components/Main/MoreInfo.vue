@@ -4,6 +4,7 @@
       class="close-button"
       src="@/assets/cross.svg"
       alt="Close button"
+      @click="$emit('closeMoreInfo')"
     >
     <h1>Mehr Informationen:</h1>
     <hr>
@@ -12,11 +13,13 @@
 </template>
 
 <script>
+import loremIpsum from './lorem-ipsum'
+
 export default {
   name: 'MoreInformation',
   data () {
     return {
-      loremIpsum: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      loremIpsum
     }
   }
 }
@@ -30,9 +33,9 @@ $close-button-padding: 8px;
   top: 0;
   right: 0;
   background-color: rgba(250, 250, 250, 0.8);
-  width: 480px;
-  height: 440px;
-  padding: 32px;
+  width: 440px;
+  min-height: 360px;
+  padding: 24px 20px;
   box-sizing: border-box;
   .close-button {
     position: absolute;
@@ -41,16 +44,24 @@ $close-button-padding: 8px;
     cursor: pointer;
   }
   h1 {
-    font-size: 24px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 300;
   }
   hr {
     margin-top: 28px;
     margin-bottom: 36px;
   }
   p {
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: 300;
     line-height: 1.8;
+  }
+}
+
+@media (max-width: 992px) {
+  .more-info-wrapper {
+    position: relative;
+    width: 100vw;
   }
 }
 </style>
