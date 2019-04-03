@@ -62,6 +62,7 @@ $close-button-padding: 8px;
   .more-info-wrapper {
     position: relative;
     width: 100vw;
+    background-color: #fff;
   }
 }
 </style>

@@ -53,7 +53,7 @@ export default {
   width: 100%;
   min-height: 340px;
   height: auto;
-  background-color: #fff;
+  background-color: #F3F1F3;
   margin-top: 40px;
   .feature-title {
     font-size: 22px;
@@ -117,7 +117,7 @@ export default {
       }
     }
     .feature-list-container {
-      width: 288px;
+      width: 380px;
       margin: 0 auto;
       .feature-list {
         font-size: 12px;
@@ -129,6 +129,12 @@ export default {
     .price-wrapper {
       padding-bottom: 32px;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .feature-list-container {
+    max-width: 288px;
   }
 }
 </style>
