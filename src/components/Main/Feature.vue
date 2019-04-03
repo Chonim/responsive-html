@@ -4,7 +4,7 @@
       <div>{{ featureTitle }}</div>
       <img
         class="feature-image"
-        src="@/assets/mood.jpg"
+        src="@/assets/mood-mobile.jpg"
         alt="Feature Image"
       >
     </div>
@@ -111,7 +111,7 @@ export default {
       line-height: 1.6;
       .feature-image {
         display: block;
-        height: 192px;
+        height: 172px;
         width: auto;
         margin: 16px auto 4px;
       }
